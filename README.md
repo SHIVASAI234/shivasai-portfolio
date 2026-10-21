@@ -89,9 +89,13 @@ The Bank of America, Cloudera, Anthropic, Qualcomm and MongoDB vector marks are 
 3. Add a privacy-conscious backend or form service if direct in-browser submission is needed. The current email draft method depends on a configured email client.
 4. Connect a custom domain, add a social preview image with appropriate crop, and periodically review CV dates and metrics.
 
+## Tech Follow-up Desk
+
+A free job-search tool hosted alongside the portfolio at `/tech-followup-desk/` (source file: `public/tech-followup-desk/index.html`). It tracks applications, referrals and follow-ups, drafts cold emails, and tailors a CV against a job ad with an ATS-style check. It has no server: everything a visitor enters stays in their own browser's local storage, with Back up and Restore buttons to move it between devices. The ATS score is a guide, not a real applicant tracking system result.
+
 ## Security and privacy
 
-The site stores no visitor data and has no analytics or third-party form processing. The email form includes visitor-entered content only in a local `mailto:` URL. Links to external sites use `rel="noopener noreferrer"`. All visible contact details and the downloadable CV are public once published; review them before pushing to a public repository. See [SECURITY.md](SECURITY.md) for reporting; contributions can follow the [pull request checklist](.github/PULL_REQUEST_TEMPLATE.md).
+The portfolio site stores no visitor data and has no analytics or third-party form processing. The email form includes visitor-entered content only in a local `mailto:` URL. Links to external sites use `rel="noopener noreferrer"`. All visible contact details and the downloadable CV are public once published; review them before pushing to a public repository. See [SECURITY.md](SECURITY.md) for reporting; contributions can follow the [pull request checklist](.github/PULL_REQUEST_TEMPLATE.md).
 
 ## License
 
