@@ -89,6 +89,10 @@ The Bank of America, Cloudera, Anthropic, Qualcomm and MongoDB vector marks are 
 3. Add a privacy-conscious backend or form service if direct in-browser submission is needed. The current email draft method depends on a configured email client.
 4. Connect a custom domain, add a social preview image with appropriate crop, and periodically review CV dates and metrics.
 
+## Callback (job follow-up desk for the IICC community)
+
+Hosted at `/callback/` (built files in `public/callback/`). Sign-in version of the follow-up desk: email accounts through Supabase Auth, data stored in the EU (Ireland) with row-level security so each account can read only its own rows, privacy consent recorded at sign-up, data export and account deletion, and a demo mode that keeps data in the browser. The page's Content Security Policy only allows connections to the project's Supabase API and loads no third-party resources.
+
 ## Tech Follow-up Desk
 
 A free job-search tool hosted alongside the portfolio at `/tech-followup-desk/` (source file: `public/tech-followup-desk/index.html`). It tracks applications, referrals and follow-ups, drafts cold emails, and tailors a CV against a job ad with an ATS-style check. It has no server: everything a visitor enters stays in their own browser's local storage, with Back up and Restore buttons to move it between devices. The ATS score is a guide, not a real applicant tracking system result.
